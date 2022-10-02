@@ -1,18 +1,13 @@
 import java.util.Random;
 
 public class ShapeList{
-    public String Shapes(Object[] objects)
+    public String Shapes(Ishape[] objects)
     {
         String shapes = "";
 
         for(int i=0; i<objects.length; i++)
         {
-            if(objects[i] instanceof Circle)
-                shapes += new Circle().PrintShape();
-            if(objects[i] instanceof Square)
-                shapes += new Square().PrintShape();
-            if(objects[i] instanceof Rectangle)         //have to create instance everytime we add new object
-                shapes += new Rectangle().PrintShape(); //have to add new condition everytime we add new object
+            objects[i].printShape();
             shapes += "\n";
         }
         return shapes;
