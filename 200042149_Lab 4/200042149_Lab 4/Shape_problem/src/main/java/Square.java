@@ -1,6 +1,5 @@
-//public class Square implements Ishape{
-public class Square{
-   // @Override
+public class Square implements Ishape{
+    @Override
     public String PrintShape() {
         return "Drawing Square...";
     }
