@@ -1,6 +1,5 @@
-//public class Rectangle implements Ishape{
-public class Rectangle {
-    //@Override
+public class Rectangle implements Ishape{
+    @Override
     public String PrintShape() {
         return "Drawing Rectangle...";
     }
